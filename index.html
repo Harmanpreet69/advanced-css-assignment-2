@@ -20,5 +20,174 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Everyday Design</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About the Book</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Buy Now</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-light py-5 text-center">
+      <div class="container">
+        <!-- Cover image from Amazon https://www.amazon.ca/Design-Everyday-Things-Revised-Expanded/dp/0465050654 -->
+        <img
+          src="./images/the_design_of_everyday_thngs_book-cover.jpg"
+          alt="The Design of Everyday Things
+        Book Cover"
+          width="500px"
+          height="500px"
+          class="img-fluid mb-3"
+        />
+        <h1 class="display-4">The Design of Everyday Things</h1>
+        <p class="lead">By Don Norman</p>
+      </div>
+    </header>
+
+    <!-- About the Author Section -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <!-- Image from https://www.scad.edu/content/don-norman -->
+            <img
+              src="./images/Don-Norman_headshot.jpg"
+              alt="Don Norman"
+              class="img-fluid rounded-circle"
+            />
+          </div>
+          <div class="col-md-8">
+            <h2>About the Author</h2>
+            <p>
+              Don Norman is a renowned cognitive scientist and usability
+              engineer. He is best known for advocating for user-centered design
+              and making technology accessible and intuitive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">What Readers Are Saying</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <blockquote class="blockquote">
+              <p>"A must-read for designers and engineers."</p>
+              <footer class="blockquote-footer">Design Review Weekly</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote class="blockquote">
+              <p>"Timeless insights into design principles."</p>
+              <footer class="blockquote-footer">Tech Journal</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote class="blockquote">
+              <p>"Don Norman makes the complex simple."</p>
+              <footer class="blockquote-footer">UX Today</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buy Now Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Order Your Copy Today</h2>
+        <form class="w-50 mx-auto">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="quantity" class="form-label">Quantity</label>
+            <input
+              type="number"
+              class="form-control"
+              id="quantity"
+              value="1"
+              min="1"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Buy Now</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Carousel -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Other Works by Don Norman</h2>
+        <div id="booksCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- Image from Amazon https://m.media-amazon.com/images/I/71lsCWwYwKL._SL1500_.jpg -->
+              <img
+                src="images/emotinal-design_book_cover.jpg"
+                class="d-block w-100"
+                alt="Book 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <!-- Image from Amazon https://m.media-amazon.com/images/I/71Mgiq2KUeL._SL1500_.jpg -->
+              <img
+                src="images/design_for_a_better_world_book_cover.jpg"
+                class="d-block w-100"
+                alt="Book 2"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#booksCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#booksCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-light text-center">
+      <p>&copy; 2024 Everyday Design | All Rights Reserved</p>
+    </footer>
+  </body>
 </html>
